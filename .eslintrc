@@ -16,7 +16,6 @@
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "none",
         "semi": false,
         "singleQuote": true
       }
