@@ -9,7 +9,7 @@ These are the settings I use for Eslint and Prettier.
 1. Install the package
 
 ```sh
-npx install-peerdeps --dev eslint-config-pelias
+yarn add -D eslint eslint-config-pelias
 ```
 
 2. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
