@@ -9,7 +9,7 @@ These are the settings I use for Eslint and Prettier.
 1. Install the package
 
 ```sh
-yarn add -D eslint eslint-config-pelias
+yarn add --dev eslint eslint-config-pelias
 ```
 
 ```sh
