@@ -12,6 +12,10 @@ These are the settings I use for Eslint and Prettier.
 yarn add -D eslint eslint-config-pelias
 ```
 
+```sh
+npm install --save-dev eslint eslint-config-pelias
+```
+
 2. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
 
 ```json
