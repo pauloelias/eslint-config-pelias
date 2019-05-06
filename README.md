@@ -2,9 +2,9 @@
 
 These are the settings I use for Eslint and Prettier.
 
-They are a slightly opinionated but they've been tuned over a few years of [modern javasript](https://javascript.info) and [react](https://reactjs.org). This config can also be easily extended for [react-native](https://facebook.github.io/react-native/) work as well.
+They are a slightly opinionated but they've been tuned over a few years of working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can also be easily extended for [react-native](https://facebook.github.io/react-native/) as well.
 
-This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the similar format of the documentation.
+This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the blatant rip-off of his documentation.
 
 ## What it Does
 
@@ -17,11 +17,11 @@ This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier 
 
 ## Installing
 
-You can install this package locally per project or globally.
+You can install this package locally (per project) or globally.
 
 Ideally you'll want to install this locally per project so that you can have project-specific settings for everyone working on the project.
 
-Installing this package globally allows you to lint and format ad-hoc JavaScript files and projects too. It's nice if you want to spin up a quick protoype or throwaway project to work through a quick idea.
+Installing this package globally allows you to lint and format ad-hoc JavaScript files and projects too. It's nice if you want to spin up a quick protoype or a throwaway project to work through a quick idea.
 
 ### Locally/Per Project Install
 
@@ -103,14 +103,11 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 {
   "extends": ["wesbos"],
   "rules": {
-    "no-console": 2,
     "prettier/prettier": [
       "error",
       {
-        "trailingComma": "es5",
-        "singleQuote": true,
-        "printWidth": 120,
-        "tabWidth": 8
+        "semi": false,
+        "singleQuote": true
       }
     ]
   }
@@ -119,9 +116,9 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 
 ### With VS Code
 
-Once you have done one, or both, of the above installs. You probably want your editor to lint and fix for you. Here are the instructions for VS Code:
+Once you have done one, or both, of the above installs. You probably want your editor to lint and fix issues for you. Here are the instructions for VS Code:
 
-1. Install the ESLint package
+1. Install the [ESLint package](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 2. Now we need to setup some VS Code settings via `Code/File` → `Preferences` → `Settings`. It's easier to enter these settings while editing the `settings.json` file, so click the `{}` icon in the top right corner:
 
 ```
@@ -139,6 +136,6 @@ Once you have done one, or both, of the above installs. You probably want your e
 // tell the ESLint plugin to run on save
 "eslint.autoFixOnSave": true,
 
-// Optional BUT IMPORTANT: If you have the prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
+// Optional BUT IMPORTANT: If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
 "prettier.disableLanguages": ["javascript", "javascriptreact"],
 ```
