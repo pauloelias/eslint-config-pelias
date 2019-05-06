@@ -78,7 +78,7 @@ yarn global add eslint prettier eslint-config-pelias
 npm install -g eslint prettier eslint-config-pelias
 ```
 
-2. Add a global .eslintrc file:
+2. Add a global `.eslintrc` file:
 
 ESLint will look for one in your home directory:
 
@@ -89,7 +89,7 @@ Your `.eslintrc` file should look like this:
 
 ```json
 {
-  "extends": ["wesbos"]
+  "extends": ["pelias"]
 }
 ```
 
@@ -97,11 +97,11 @@ To use from the CLI, you can now run `eslint .` or configure your editor as we s
 
 ## Settings
 
-If you'd like to overwrite eslint or prettier settings, you can add the rules in your .eslintrc file. The ESLint rules go directly under "rules" while prettier options go under "prettier/prettier". Note that prettier rules overwrite anything in my config (trailing comma, and single quote), so you'll need to include those as well.
+If you'd like to overwrite eslint or prettier settings, you can add the rules in your .eslintrc file. The ESLint rules go directly under "rules" while prettier options go under "prettier/prettier". Note that prettier rules overwrite anything in my config (removing semicolons, and using single quotes), so you'll need to include those as well.
 
 ```json
 {
-  "extends": ["wesbos"],
+  "extends": ["pelias"],
   "rules": {
     "prettier/prettier": [
       "error",
