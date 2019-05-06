@@ -2,7 +2,7 @@
 
 These are the settings I use for Eslint and Prettier.
 
-They are a slightly opinionated and have been fine-tuned while working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can be easily extended to accomodate how you (and/or your team works).
+They are a slightly opinionated and have been fine-tuned while working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can be easily extended to accomodate how you and/or your team work.
 
 This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the blatant rip-off of his documentation (thanks [Wes](https://twitter.com/wesbos)!).
 
@@ -23,7 +23,7 @@ Ideally you'll want to install this locally per project so that you can have pro
 
 Installing this package globally allows you to lint and format ad-hoc JavaScript files and projects too. It's nice if you want to spin up a quick protoype or a throwaway project to work through a quick idea.
 
-### Locally/Per Project Install
+### Local/Per Project Install
 
 1. If you don't have a `package.json` file, initialize your project with `yarn init` or `npm init`
 
@@ -68,7 +68,7 @@ npm run lint:fix
 
 ### Global Install
 
-1. Install the package and its peer dependencies globally
+1. Install the package and its peer dependencies globally:
 
 ```sh
 yarn global add eslint prettier eslint-config-pelias
@@ -93,11 +93,11 @@ Your `.eslintrc` file should look like this:
 }
 ```
 
-To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
+To use from the CLI, you can now run `eslint .` or configure your editor (below under "Settings").
 
 ### Extending and Adding Your Own Rules (react-native example)
 
-1. Follow the instructions to install this config locally for your project
+1. Follow the instructions to install this config locally for your project.
 
 2. Install the new package and its dependencies:
 
@@ -140,7 +140,7 @@ If you'd like to overwrite eslint or prettier settings, you can add the rules in
 }
 ```
 
-### With VS Code
+### VS Code Settings
 
 Once you have done one, or both, of the above installs. You probably want your editor to lint and fix issues for you. Here are the instructions for VS Code:
 
