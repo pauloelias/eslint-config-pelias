@@ -2,7 +2,7 @@
 
 These are the settings I use for Eslint and Prettier.
 
-They are a slightly opinionated but they've been tuned over a few years of working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can also be easily extended for [react-native](https://facebook.github.io/react-native/) as well.
+They are a slightly opinionated and they've been tuned over a few years of working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can also be easily extended for [react-native](https://facebook.github.io/react-native/) and other uses as well.
 
 This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the blatant rip-off of his documentation.
 
