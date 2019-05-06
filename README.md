@@ -95,32 +95,6 @@ Your `.eslintrc` file should look like this:
 
 To use from the CLI, you can now run `eslint .` or configure your editor (below under "Settings").
 
-### Extending and Adding Your Own Rules (react-native example)
-
-1. Follow the instructions to install this config locally for your project.
-
-2. Install the new package and its dependencies:
-
-```sh
-yarn add --dev eslint-plugin-react-native-a11y
-```
-
-```sh
-npm install --save-dev eslint-plugin-react-native-a11y
-```
-
-3. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
-
-```json
-{
-  "extends": ["pelias", "plugin:react-native-a11y/recommended"],
-  "rules": {
-    "react-native-a11y/has-valid-accessibility-role": 1
-  },
-  "plugins": ["eslint-plugin-react-native-a11y"]
-}
-```
-
 ## Settings
 
 If you'd like to overwrite eslint or prettier settings, you can add the rules in your .eslintrc file. The ESLint rules go directly under "rules" while prettier options go under "prettier/prettier". Note that prettier rules overwrite anything in my config (removing semicolons, and using single quotes), so you'll need to include those as well.
@@ -164,4 +138,30 @@ Once you have done one, or both, of the above installs. You probably want your e
 
 // Optional BUT IMPORTANT: If you have the Prettier extension enabled for other languages like CSS and HTML, turn it off for JS since we are doing it through Eslint already
 "prettier.disableLanguages": ["javascript", "javascriptreact"],
+```
+
+### Extending and Adding Your Own Rules (react-native example)
+
+1. Follow the instructions to install this config locally for your project.
+
+2. Install the new package and its dependencies:
+
+```sh
+yarn add --dev eslint-plugin-react-native-a11y
+```
+
+```sh
+npm install --save-dev eslint-plugin-react-native-a11y
+```
+
+3. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
+
+```json
+{
+  "extends": ["pelias", "plugin:react-native-a11y/recommended"],
+  "rules": {
+    "react-native-a11y/has-valid-accessibility-role": 1
+  },
+  "plugins": ["eslint-plugin-react-native-a11y"]
+}
 ```
