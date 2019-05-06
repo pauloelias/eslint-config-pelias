@@ -102,11 +102,11 @@ To use from the CLI, you can now run `eslint .` or configure your editor (below 
 2. Install the new package and its dependencies:
 
 ```sh
-yarn add --dev eslint-config-standard-jsx
+yarn add --dev eslint-plugin-react-native-a11y
 ```
 
 ```sh
-npm install --save-dev eslint-config-standard-jsx
+npm install --save-dev eslint-plugin-react-native-a11y
 ```
 
 3. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
@@ -117,7 +117,7 @@ npm install --save-dev eslint-config-standard-jsx
   "rules": {
     "react-native-a11y/has-valid-accessibility-role": 1
   },
-  "plugins": ["react-native-a11y"]
+  "plugins": ["eslint-plugin-react-native-a11y"]
 }
 ```
 
