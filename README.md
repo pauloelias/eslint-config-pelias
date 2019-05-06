@@ -2,9 +2,9 @@
 
 These are the settings I use for Eslint and Prettier.
 
-They are a slightly opinionated and they've been tuned over a few years of working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can also be easily extended for [react-native](https://facebook.github.io/react-native/) and other uses as well.
+They are a slightly opinionated and have been fine-tuned while working with [modern JavaScript](https://javascript.info) and [react](https://reactjs.org). This config can be easily extended to accomodate how you (and/or your team works).
 
-This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the blatant rip-off of his documentation.
+This package is heavily inspired by [Wes Bos's `No-Sweat™ Eslint and Prettier Setup`](https://github.com/wesbos/eslint-config-wesbos/)... hence the blatant rip-off of his documentation (thanks [Wes](https://twitter.com/wesbos)!).
 
 ## What it Does
 
@@ -25,7 +25,7 @@ Installing this package globally allows you to lint and format ad-hoc JavaScript
 
 ### Locally/Per Project Install
 
-1. If you don't have a `package.json` file, initialize your project with `yarn init` or `npm itit`
+1. If you don't have a `package.json` file, initialize your project with `yarn init` or `npm init`
 
 2. Install the package and its peer dependencies:
 
@@ -94,6 +94,32 @@ Your `.eslintrc` file should look like this:
 ```
 
 To use from the CLI, you can now run `eslint .` or configure your editor as we show next.
+
+### Extending and Adding Your Own Rules (react-native example)
+
+1. Follow the instructions to install this config locally for your project
+
+2. Install the new package and its dependencies:
+
+```sh
+yarn add --dev eslint-config-standard-jsx
+```
+
+```sh
+npm install --save-dev eslint-config-standard-jsx
+```
+
+3. Create an `.eslintrc` file in the root of your project (alongside your `package.json`) and add the following:
+
+```json
+{
+  "extends": ["pelias", "plugin:react-native-a11y/recommended"],
+  "rules": {
+    "react-native-a11y/has-valid-accessibility-role": 1
+  },
+  "plugins": ["react-native-a11y"]
+}
+```
 
 ## Settings
 
