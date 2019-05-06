@@ -140,7 +140,7 @@ Once you have done one, or both, of the above installs. You probably want your e
 "prettier.disableLanguages": ["javascript", "javascriptreact"],
 ```
 
-### Extending and Adding Your Own Rules (react-native example)
+## Extending and Adding Your Own Rules (react-native example)
 
 1. Follow the instructions to install this config locally for your project.
 
